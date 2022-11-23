@@ -1,0 +1,107 @@
+$offBlack: #1e1e1e;
+$whitishBlue: #f0f8ff;
+$aqua: #78c1db;
+
+$border: 15px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $aqua;
+  padding: 0.2rem;
+}
+
+.user-info {
+  background-color: $offBlack;
+  color: $whitishBlue;
+
+  padding: 1rem;
+  border-radius: $border;
+
+  display: flex;
+
+  max-width: 600px;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: $border;
+  }
+}
+
+.user-display {
+  display: flex;
+  gap: 1rem;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.things {
+  a {
+    display: inline-block;
+  }
+}
+
+// Sections
+
+.section-title {
+  text-align: center;
+  padding: 1rem;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.sect-footer {
+  color: $whitishBlue;
+  background-color: #5f118b;
+  border-radius: $border;
+
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 1rem;
+
+
+}
+
+// Worker Card
+
+.worker-card {
+  background-color: $offBlack;
+  color: $whitishBlue;
+
+  width: fit-content;
+
+  border-radius: $border;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  button {
+    padding: .2rem;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $aqua;
+      transition: .3s;
+    }
+  }
+}
